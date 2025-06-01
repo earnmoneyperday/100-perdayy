@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -99,23 +99,25 @@
     </div>
   </div>
 
-  <!-- ✅ Countdown Script -->
+  <!-- ✅ Working Countdown Script -->
   <script>
-    let seconds = 15;
-    const countSpan = document.getElementById("count");
-    const timer = document.getElementById("timer");
-    const ctaBtn = document.getElementById("ctaBtn");
+    document.addEventListener("DOMContentLoaded", function () {
+      let seconds = 15;
+      const timer = document.getElementById("timer");
+      const ctaBtn = document.getElementById("ctaBtn");
 
-    const countdown = setInterval(() => {
-      seconds--;
-      if (seconds > 0) {
-        countSpan.textContent = seconds;
-      } else {
-        clearInterval(countdown);
-        timer.style.display = "none";
-        ctaBtn.style.display = "inline-block";
-      }
-    }, 1000);
+      const countdown = setInterval(() => {
+        seconds--;
+        if (seconds > 0) {
+          timer.textContent = ⏳ Please wait ${seconds} seconds before continuing...;
+        } else {
+          clearInterval(countdown);
+          timer.style.display = "none";
+          ctaBtn.style.display = "inline-block";
+          ctaBtn.href = "https://www.profitableratecpm.com/tz7ds6mf3?key=a7471400876807a0b6e5410c9c4ee576";
+        }
+      }, 1000);
+    });
   </script>
 
 </body>
